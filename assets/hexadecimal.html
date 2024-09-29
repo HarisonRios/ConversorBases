@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/minecraft-framework-css@1.1.9/css/main.css">
+  <link rel="shortcut icon"
+    href="https://minecraft.wiki/images/thumb/Cherry_Tree_JE3.png/120px-Cherry_Tree_JE3.png?967fe">
+
+  <link rel="stylesheet" href="../style.css">
+  <title>Calculadora - Minecraft</title>
+</head>
+
+
+<body>
+  <ul class="navbar" cursor="pointer">
+    <li>
+      <a href="../index.html" class="button-dark">Decimal</a>
+    </li>
+    <li>
+      <a href="/assets/binario.html" class="button-dark">Binário</a>
+    </li>
+    <li>
+      <a href="/assets/octal.html" class="button-dark">Octal</a>
+    </li>
+    <li>
+      <a href="/assets/hexadecimal.html" class="button-dark">Hexadecimal</a>
+    </li>
+    <li>
+      <a href="/assets/ascii.html" class="button-dark">Ascii</a>
+    </li>
+  </ul>
+
+
+  <div class="container">
+    <h1>Hexadecimal</h1>
+    <h2>Selecione a base que deseja coverter</h2>
+    <input id="valorDoHexa" type="text" placeholder="Digite o valor em Hexadecimal" cursor="pointer">
+
+
+    <select name="" id="escolha_tipo_hexa_para" cursor="pointer">
+      <option value="null" disabled selected>Selecione a base inicial</option>
+      <option value="hexadecimal_para_decimal">Decimal</option>
+      <option value="hexadecimal_para_octal">Octal</option>
+      <option value="hexadecimal_para_binario">Binario</option>
+    </select>
+
+
+
+    <button class="button-java-w-old" onclick="CalcularaHexaPara()" cursor="pointer">Calcular</button>
+
+    <p id="exibir"> </p>
+
+  </div>
+</body>
+
+</html>
+<script src="../script.js"></script>
